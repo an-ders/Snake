@@ -17,7 +17,7 @@ function setup() {
   frameRate(10);
   state = 0;
   
-  font = loadFont("./American Captain.ttf");
+  font = loadFont("/Snake/components/American Captain.ttf");
 
 }
 
