@@ -1,17 +1,17 @@
-function Tail(x, y, colour){
-  
-  this.pos = {x:0, y:0};
-  this.pos.x = x;
-  this.pos.y = y;
-  this.colour = colour;
-  
-  this.update = function (x, y){
-    this.pos.x = x;
-    this.pos.y = y;
-  }
-  
-  this.show = function(){
-    noStroke();
-    rect(this.pos.x,this.pos.y,20,20);
-  }
+class Tail {
+	constructor(x, y, TILE_SIZE) {
+		this.pos = { x: 0, y: 0 };
+		this.pos.x = x;
+		this.pos.y = y;
+	}
+
+	update(x, y) {
+		this.pos.x = x;
+		this.pos.y = y;
+	}
+
+	show() {
+		noStroke();
+		rect(this.pos.x * TILE_SIZE, this.pos.y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
+	}
 }
