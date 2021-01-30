@@ -23,7 +23,7 @@ var highscore;
 */
 
 function setup() {
-	TILE_SIZE = floor((windowHeight * PERCENT_HEIGHT) / HEIGHT);
+	TILE_SIZE = floor((min(windowHeight, windowWidth) * PERCENT_HEIGHT) / HEIGHT);
 	SCREEN_SIZE = TILE_SIZE * HEIGHT;
 	TEXT_SIZE = TILE_SIZE * 4;
 	createCanvas(SCREEN_SIZE, SCREEN_SIZE);
