@@ -11,4 +11,4 @@ WASD to move
 
 P or ESC to pause
 
-[Play the game here!](https://madeyouloook.github.io/Snake/)
+[Play the game here!](https://an-ders.github.io/Snake/)
